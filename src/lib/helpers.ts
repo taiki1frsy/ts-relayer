@@ -134,6 +134,29 @@ export const osmosis: ChainDefinition = {
   estimatedIndexerTime: 80,
 };
 
+export const juno: ChainDefinition = {
+  tendermintUrlWs: 'ws://localhost:26651',
+  tendermintUrlHttp: 'http://localhost:26651',
+  chainId: 'juno-testing',
+  prefix: 'juno',
+  denomStaking: 'ujuno',
+  denomFee: 'ujuno',
+  minFee: '0ujuno',
+  blockTime: 250, // ms
+  faucet: {
+    mnemonic:
+      'remain fragile remove stamp quiz bus country dress critic mammal office need',
+    pubkey0: {
+      type: 'tendermint/PubKeySecp256k1',
+      value: 'A0d/GxY+UALE+miWJP0qyq4/EayG1G6tsg24v+cbD6By',
+    },
+    address0: 'juno1lvrwcvrqlc5ktzp2c4t22xgkx29q3y83fygn9r',
+  },
+  ics20Port: 'transfer',
+  estimatedBlockTime: 400,
+  estimatedIndexerTime: 80,
+};
+
 // constants for this transport protocol
 // look at ChainDefinitions to find standard ics20 port
 export const ics20 = {
