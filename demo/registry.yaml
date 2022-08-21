@@ -48,6 +48,15 @@ chains:
     estimated_indexer_time: 60,
     rpc:
       - http://localhost:26653
+  local_juno:
+    chain_id: juno-testing
+    prefix: juno
+    gas_price: 0ujuno
+    hd_path: m/44'/1234'/0'/5'
+    estimated_block_time: 400,
+    estimated_indexer_time: 60,
+    rpc:
+      - http://localhost:26651
   cosmoshub-4:
     chain_id: cosmoshub-4
     prefix: cosmos
